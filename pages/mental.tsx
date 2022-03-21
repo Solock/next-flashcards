@@ -5,7 +5,7 @@ const Mental: React.FC = () => {
   return (
     <Layout>
       <div>
-        <h1>Mental FlashCard</h1>
+        <h1 className="text-center">Mental FlashCard</h1>
         <MentalCard />
       </div>
     </Layout>

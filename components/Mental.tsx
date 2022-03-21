@@ -6,11 +6,23 @@ function MentalCard(props :any) {
   const [show, setShow] = useState("question")
 
   return (
-    <div>
-      <h1>{props.question1}</h1>
-      <p>{show === "question" ? question : answer}</p>
-      {show === "question" ? <button onClick={() => setShow("answer")}>Show answer</button> : <button onClick={() => setShow("question")}>Show question</button>}
+
+    <div className="card text-center">
+      <div className="card-header">
+        {props.question1}
+      </div>
+
+      <div className="card-body">
+        <h5 className="card-title">{show === "question" ? question : answer}</h5>
+        {show === "question" ? <button className="btn btn-primary" onClick={() => setShow("answer")}>Show answer</button> : <button className="btn btn-primary" onClick={() => setShow("question")}>Show question</button>}
+      </div>
     </div>
+
+    // <div>
+    //   <h1>{props.question1}</h1>
+    //   <p>{show === "question" ? question : answer}</p>
+    //   {show === "question" ? <button onClick={() => setShow("answer")}>Show answer</button> : <button onClick={() => setShow("question")}>Show question</button>}
+    // </div>
   );
 }
 

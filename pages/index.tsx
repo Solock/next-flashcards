@@ -16,7 +16,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Select your type of flashcard you went !
+          Select your type of flashcard you want !
         </h1>
       </main>
     </div>
