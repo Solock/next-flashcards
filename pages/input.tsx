@@ -5,7 +5,7 @@ const Input: React.FC = () => {
   return (
     <Layout>
       <div>
-        <h1>Input FlashCard</h1>
+        <h1 className="text-center">Input FlashCard</h1>
         <InputCard />
       </div>
     </Layout>
